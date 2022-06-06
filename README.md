@@ -1,4 +1,4 @@
-# nyo-nyo-game
+# niu-niu-game
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
