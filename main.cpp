@@ -113,3 +113,23 @@ int main() {
         
         
     }
+    shuffle_card(main_deck, 52);
+    //splitcard
+    int count1 = 0;
+    int count2 = 0;
+    int count3 = 0;
+    for (int i = 0; i < 15; i++) {
+
+        if (i == 0 || i == 3 || i == 6 || i == 9 || i == 12) {
+            cpu1.setDeck(main_deck[i], count1);
+            count1++;
+        }
+        else if (i == 1 || i == 4 || i == 7 || i == 10 || i == 13) {
+            cpu2.setDeck(main_deck[i], count2);
+            count2++;
+        }
+        else if (i == 2 || i == 5 || i == 8 || i == 11 || i == 14) {
+            cpu3.setDeck(main_deck[i], count3);
+            count3++;
+        }
+    }
