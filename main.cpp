@@ -90,4 +90,26 @@ using namespace std;
     }else return -1;
 }
 int main() {
-    
+     NiuNiu cpu1;
+    NiuNiu cpu2;
+    NiuNiu cpu3;
+
+   const int Card_numbers = 52;
+    int main_deck[Card_numbers];
+    srand(time(0));
+    int number[] = { 1,2,3,4,5,6,7,8,9,10,10,10,10 };
+    int j = 0;
+
+    //intitalized deck
+    for (int i = 0; i < Card_numbers; i++) {
+        main_deck[i] = i;
+    }
+    //intital Every card of points
+    for (int i = 0; i < Card_numbers; i++) {
+        main_deck[i] = number[j++];
+        while (j > 12) {
+            j = 0;
+        }
+        
+        
+    }
