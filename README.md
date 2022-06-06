@@ -6,7 +6,18 @@
 #include <fstream>
 #include "CPU.hpp"
 using namespace std; 
-  
+    
+  void* shuffle_card(int deck[], int size) {
+    int index;
+    int temp;
+    for (unsigned int i = 0; i < 52; i++) {
+        index = rand() % 52;
+        temp = deck[i];
+        deck[i] = deck[index];
+        deck[index] = temp;
+    }
+    return 0;
+}
   
   
   bool check(int x, int y, int z) {
