@@ -133,3 +133,26 @@ int main() {
             count3++;
         }
     }
+    cout << "\nPlayer1's Deck:\n";
+    cpu1.print();
+    cout << endl;
+    cout << "Player2's Deck:\n";
+    cpu2.print();
+    cout << endl;
+    cout << "Player3's Deck:\n";
+    cpu3.print();
+    cout << endl<<setw(2);
+
+    int array1[5] = { cpu1.getDeck(0),cpu1.getDeck(1),cpu1.getDeck(2),cpu1.getDeck(3),cpu1.getDeck(4) };
+    int array2[5] = { cpu2.getDeck(0),cpu2.getDeck(1),cpu2.getDeck(2),cpu2.getDeck(3),cpu2.getDeck(4) };
+    int array3[5] = { cpu3.getDeck(0),cpu3.getDeck(1),cpu3.getDeck(2),cpu3.getDeck(3),cpu3.getDeck(4) };
+    cout << endl;
+    //int count = 0;
+    cpu1.setPoint(select_card(array1));
+    cpu2.setPoint(select_card(array2));
+    cpu3.setPoint(select_card(array3));
+    cout << "Result:\nPlayer1 : "<< cpu1.getPoint()
+    << "\nPlayer2 : " << cpu2.getPoint()
+    << "\nPlayer3 : " << cpu3.getPoint()<<endl<<endl;
+
+}
