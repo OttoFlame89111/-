@@ -7,7 +7,7 @@
 #include "CPU.hpp"
 using namespace std; 
     
-  void* shuffle_card(int deck[], int size) {
+  void shuffle_card(int deck[], int size) {
     int index;
     int temp;
     for (unsigned int i = 0; i < 52; i++) {
